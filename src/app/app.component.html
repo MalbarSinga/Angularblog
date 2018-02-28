@@ -1,0 +1,67 @@
+<nav class="jumbotron navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">My APPI Singa</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Lien a venir</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Lien 2 a venir</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="listeArticle">
+    <div class="article">
+      <!-- onva utiliser la boucle NG for-->
+      <h2>{{article?.title}}</h2>
+      <!-- on utilise le point d'interogation pour mettre en optionnel-->
+      <h3>{{article?.author}}</h3>
+      <p>{{article?.description}}</p>
+
+    </div>
+  </div>
+
+  <form>
+
+    <div class="form-group">
+
+      <label for="exampleInputPassword1">Votre prenom</label>
+      <input type="input" class="form-control" id="exampleInputPassword1" placeholder="Prenom">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Votre email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">Promis on ne partagera jamais votre email.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Votre 06</label>
+      <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Votre telephone">
+
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Commentaires:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+
+    <button type = "submit" class="btn  btn-dark">Creer article</button>
+    <button type ="reset" class="btn btn-danger">Reseter</button>
+  </form>
+
+
+</div>
+
+
+
